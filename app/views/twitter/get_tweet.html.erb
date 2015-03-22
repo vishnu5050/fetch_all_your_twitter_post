@@ -1,0 +1,13 @@
+<table class="table table-hover">
+<% @client.user_timeline.each do |tweet| %> 
+
+
+<%= tweet.text %> <%= tweet.created_at %><br><hr>
+
+<%#= tweet.id.followers %>
+
+<% end %> 
+</table>
+<%#= @client.home_timeline %>
+
+        
